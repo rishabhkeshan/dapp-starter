@@ -1,0 +1,30 @@
+.scanscreen {
+  @apply pt-32 mb-32;
+  width: 100vw;
+  color: white;
+  height: 100%;
+  overflow-y: scroll;
+  &_maincontainer {
+    @apply px-6 w-full;
+    &_createevent {
+      @apply flex w-full justify-center text-gray-800 items-center text-2xl font-bold px-4 py-3 rounded-lg;
+      border-radius: 6px;
+      background: #f2f2f2;
+      box-shadow: 0px 2px 1px 0px #fff inset,
+        0px -2px 1px 0px rgba(10, 10, 10, 0.29) inset;
+    }
+    &_scanQR {
+      @apply flex justify-center items-center text-center p-3 text-2xl font-bold my-6 rounded-lg;
+      background-color: #266220;
+            box-shadow: 0px 2px 1px 0px #266220 inset,
+        0px -2px 1px 0px rgba(10, 10, 10, 0.29) inset;
+    }
+    &_templatecontainer {
+      @apply flex gap-2 mt-6 flex-wrap;
+      &_template {
+        @apply w-12 h-12 flex justify-center items-center rounded-sm;
+        border: 0.4px solid white;
+      }
+    }
+  }
+}

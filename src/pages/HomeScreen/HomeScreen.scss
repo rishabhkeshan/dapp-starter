@@ -1,0 +1,13 @@
+.homescreen {
+  @apply flex h-screen w-screen;
+  overflow: hidden;
+    &::-webkit-scrollbar {
+    display: none !important;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
